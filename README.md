@@ -1,3 +1,5 @@
+[Brew Milk Tea](https://creativebinbag.github.io/MilkTea/)
+
 Good day everyone. I whipped up this silly little project while trying to polish my JavaScript + React skills. It was certainly born out of my love for milk tea, but it was coupled with my knack for constantly messing up the brewing time. You see, although I drink tea at least twice every day, I often find myself in the kitchen staring at a pot devoid of water, with the sad remnants of scorched tea leaves (cue the horror music). I figured I needed an alarm of sorts to nudge me before disaster struck. What better solution than making a brewing time calculator (with an "alarm", tada) + recipe generator for various types of tea leaves used in milk tea?
 
 It's a ridiculously simple project: pick your tea leaves, choose your preferred tea strength, specify the cup count, hit start, and follow the countdown timer. You'll also notice a quaint notepad-esque page popping up to guide you on making a decent cup of tea.
