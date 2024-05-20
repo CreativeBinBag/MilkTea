@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1250px;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(28, 28, 45);
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover;
+    
+  }
+
+
+.container{
+
+  width: 77%; /* Adjust the width as needed */
+  background-color:rgb(130, 109, 90);  ;
+  margin: 60px auto; /* Center the container horizontally and provide some top margin */
+  padding: 20px; /* Add some padding inside the container */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  position: relative;
+
+}
+
+.dropdown {
+    width: 400px;
+    user-select: none;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    z-index: 2; 
+}
+
+.dropdown .dropdown-btn {
+    padding: 10px 30px;
+    background: rgb(241, 191, 152);
+    box-shadow:  3px 3px 10px 6px rgb(224, 179, 134);
+    color: #a76303;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 2px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative; 
+}
+
+
+.dropdown .dropdown-content {
+    position: absolute; /* Change to absolute */
+    top: calc(100% + 5px); /* Adjust as needed */
+    left: 50%; /* Align with the center of the button */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px;
+    background: rgb(216, 160, 110);
+    color:  #772f08;
+    width: 150px; /* Adjust width as needed */
+    border-radius: 8px;
+    z-index: 2; 
+}
+
+.dropdown .dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.dropdown .dropdown-content .dropdown-item:hover {
+    background: #d1995e;
+}
+
+.teastrength {
+    width: 400px;
+    user-select: none;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.teastrength .teastrength-btn {
+    padding: 10px 30px;
+    background: rgb(241, 191, 152);
+    box-shadow:  3px 3px 10px 6px rgb(224, 179, 134);
+    color: #a76303;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 2px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative; /* Add this */
+}
+
+
+.teastrength .teastrength-content {
+    position: absolute; /* Change to absolute */
+    top: calc(100% + 5px); /* Adjust as needed */
+    left: 50%; /* Align with the center of the button */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px;
+    background: rgb(216, 160, 110);
+    width: 150px; /* Adjust width as needed */
+    border-radius: 8px;
+    
+
+
+
+}
+
+
+
+.teastrength .teastrength-content .teastrength-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.teastrength .teastrength-content .teastrength-item:hover {
+    background: #d99b61;
+}
+
+.teastrength .teastrength-content .teastrength-item.strong {
+    color: rgb(107, 52, 3); /* Dark color for 'Strong' */
+  }
+  
+.teastrength .teastrength-content .teastrength-item.medium {
+    color: #b66231; /* Lighter color for 'Medium' */
+  }
+  
+.teastrength .teastrength-content .teastrength-item.delicate {
+    color: #c9834e; /* Very light color for 'Weak' */
+  }
+
+.teastrength .teastrength-btn.strong {
+    color: rgb(107, 52, 3);
+}
+.teastrength .teastrength-btn.medium{
+    color: #b66231;
+  }
+.teastrength .teastrength-btn.delicate {
+    color: #c9834e;
+  } 
+
+.vessel {
+    width: 400px;
+    user-select: none;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+     
+}
+
+.vessel .vessel-btn {
+    padding: 10px 30px;
+    background: rgb(241, 191, 152);
+    box-shadow:  3px 3px 10px 6px rgb(224, 179, 134);
+    color: #a76303;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 2px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative; /* Add this */
+}
+
+
+.vessel .vessel-content {
+    position: absolute; /* Change to absolute */
+    top: calc(100% + 5px); /* Adjust as needed */
+    left: 50%; /* Align with the center of the button */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px;
+    background: rgb(216, 160, 110);
+    color: #772f08;
+    width: 150px; /* Adjust width as needed */
+    border-radius: 8px;
+    z-index: 2; 
+}
+
+.vessel .vessel-content .vessel-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.vessel .vessel-content .vessel-item:hover {
+    background: #d1995e;
+}
+
+
+.dropdown-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #743302; 
+
+}
+
+.teastrength-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #743302; 
+}
+.vessel-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #743302;
+
+}
+
+.countdown .content {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px ;
+    gap: 10px;
+    padding: 20px;
+
+
+}
+
+.countdown .box{ 
+    width: calc(100% /4);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    max-width: 150px;
+    color: #ffb958;
+} 
+
+
+.start-btn {
+    bottom: 6rem; /* Adjust the distance from the bottom as needed */
+    right: 26.5rem; /* Adjust the distance from the right as needed */
+    padding: 10px 20px;
+    position: absolute;
+    background-color: rgb(42, 32, 24);
+    color: #f79f25;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .start-btn:hover {
+    background-color: rgb(235, 191, 160); /* Darker shade of button color */
+  }
+
+  .teapot,
+  .tea.fill {
+      position: absolute;
+      top: 65%;
+      left: 19%;
+      transform: translate(-50%, -50%);
+  }
+    
+  .tea {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: clip-path var(--animation-duration) linear, opacity var(--animation-duration) linear; /* Transition clip-path and opacity */
+    opacity: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); /* Start with fully hidden tea */
+}
+
+.tea.fill {
+    opacity: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); /* Gradually reveal tea from bottom to top */
+}
+
+
+.text {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    padding: 5px 15px;
+    color:  #ffb958;
+    max-width: 200px; 
+
+}
+
+.top {
+    width: 37%;
+    height: 30px;
+    background: #2e2820;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 5px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the notepad appears above other elements */
+    font-size: 17px;
+    color: #fad193;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+
+
+  }
+  
+  .paper {
+    width: 98.5%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    min-height: 55vh;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    top: 30px; /* Adjust the top position as needed */
+    position: absolute;
+    background: repeating-linear-gradient(#e1bf9c, #c4a588 31px, #534c3e 31px, #867a71 32px);
+    font-family: 'Shadows Into Light', cursive;
+    line-height: 32px;
+    outline: 0;
+    font-size: 15px; /* Increase font size for better readability */
+    z-index: 1; /* Ensure the notepad appears above other elements */
+ 
+
+  }
+
